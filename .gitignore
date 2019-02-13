@@ -1,0 +1,10 @@
+**/node_modules
+**/.gradle
+**/.vscode
+**/bin
+**/build
+**/.settings
+.classpath
+.project
+.keep
+*.log
