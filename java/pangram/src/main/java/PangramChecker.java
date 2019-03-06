@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class PangramChecker {
   private char[] alphabet = "abcdefghijklmnopqrstuvwxyz".toCharArray();
 

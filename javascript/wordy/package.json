@@ -24,6 +24,8 @@
     ]
   },
   "babel": {
+    "retainLines": true,
+    "sourceMap": "inline",
     "presets": [
       [
         "env",
@@ -73,7 +75,7 @@
       "import/extensions": "off",
       "import/prefer-default-export": "off",
       "import/no-default-export": "off",
-      "semi": "never"
+      "semi": [2, "never"]
     }
   },
   "license": "MIT",
