@@ -1,0 +1,10 @@
+{
+  "files.autoSave": "onFocusChange",
+  "editor.tabSize": 2,
+  "editor.fontSize": 16,
+  "editor.renderWhitespace": "boundary",
+  "editor.wordWrap": "on",
+  "editor.minimap.renderCharacters": false,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true
+}

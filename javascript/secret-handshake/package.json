@@ -13,46 +13,20 @@
     "babel-jest": "^23.6.0",
     "babel-plugin-transform-builtin-extend": "^1.1.2",
     "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
     "eslint": "^5.12.1",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.15.0",
-    "jest": "^23.6.0"
+    "jest": "^23.6.0",
+    "nodemon": "^1.18.10"
   },
   "jest": {
     "modulePathIgnorePatterns": [
       "package.json"
     ]
   },
-  "babel": {
-    "retainLines": true,
-    "sourceMap": "inline",
-    "presets": [
-      [
-        "env",
-        {
-          "targets": [
-            {
-              "node": "current"
-            }
-          ]
-        }
-      ]
-    ],
-    "plugins": [
-      [
-        "babel-plugin-transform-builtin-extend",
-        {
-          "globals": [
-            "Error"
-          ]
-        }
-      ],
-      [
-        "transform-regenerator"
-      ]
-    ]
-  },
   "scripts": {
+    "start": "nodemon -r babel-register app.js",
     "test": "jest --no-cache ./*",
     "watch": "jest --no-cache --watch ./*",
     "lint": "eslint .",
@@ -78,5 +52,7 @@
     }
   },
   "license": "MIT",
-  "dependencies": {}
+  "dependencies": {
+    "express": "4.16.4"
+  }
 }

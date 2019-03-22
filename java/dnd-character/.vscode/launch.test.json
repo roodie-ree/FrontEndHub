@@ -1,0 +1,30 @@
+{
+    "run": {
+        "default": "",
+        "items": [
+            {
+                "name": "dnd-character",
+                "projectName": "dnd-character",
+                "workingDirectory": "d:\\Users\\falkdavi\\Workspace\\Exercism\\java\\dnd-character",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    },
+    "debug": {
+        "default": "",
+        "items": [
+            {
+                "name": "dnd-character",
+                "projectName": "dnd-character",
+                "workingDirectory": "d:\\Users\\falkdavi\\Workspace\\Exercism\\java\\dnd-character",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    }
+}

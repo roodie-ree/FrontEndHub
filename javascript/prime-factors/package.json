@@ -24,8 +24,6 @@
     ]
   },
   "babel": {
-    "retainLines": true,
-    "sourceMap": "inline",
     "presets": [
       [
         "env",

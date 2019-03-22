@@ -1,0 +1,30 @@
+{
+    "run": {
+        "default": "",
+        "items": [
+            {
+                "name": "reverse-string",
+                "projectName": "reverse-string",
+                "workingDirectory": "d:\\Users\\falkdavi\\Workspace\\Exercism\\java\\reverse-string",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    },
+    "debug": {
+        "default": "",
+        "items": [
+            {
+                "name": "reverse-string",
+                "projectName": "reverse-string",
+                "workingDirectory": "d:\\Users\\falkdavi\\Workspace\\Exercism\\java\\reverse-string",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    }
+}

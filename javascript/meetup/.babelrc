@@ -1,0 +1,29 @@
+{
+  "retainLines": true,
+  "sourceMap": "inline",
+  "presets": [
+    [
+      "env",
+      {
+        "targets": [
+          {
+            "node": "current"
+          }
+        ]
+      }
+    ]
+  ],
+  "plugins": [
+    [
+      "babel-plugin-transform-builtin-extend",
+      {
+        "globals": [
+          "Error"
+        ]
+      }
+    ],
+    [
+      "transform-regenerator"
+    ]
+  ]
+}

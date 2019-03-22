@@ -1,0 +1,30 @@
+{
+    "run": {
+        "default": "",
+        "items": [
+            {
+                "name": "word-count",
+                "projectName": "word-count",
+                "workingDirectory": "d:\\Users\\falkdavi\\Repos\\Exercism\\java\\word-count",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    },
+    "debug": {
+        "default": "",
+        "items": [
+            {
+                "name": "word-count",
+                "projectName": "word-count",
+                "workingDirectory": "d:\\Users\\falkdavi\\Repos\\Exercism\\java\\word-count",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    }
+}

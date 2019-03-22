@@ -1,0 +1,30 @@
+{
+    "run": {
+        "default": "",
+        "items": [
+            {
+                "name": "isbn-verifier",
+                "projectName": "isbn-verifier",
+                "workingDirectory": "d:\\Users\\falkdavi\\Workspace\\Exercism\\java\\isbn-verifier",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    },
+    "debug": {
+        "default": "",
+        "items": [
+            {
+                "name": "isbn-verifier",
+                "projectName": "isbn-verifier",
+                "workingDirectory": "d:\\Users\\falkdavi\\Workspace\\Exercism\\java\\isbn-verifier",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "run": {
+        "default": "",
+        "items": [
+            {
+                "name": "yacht",
+                "projectName": "yacht",
+                "workingDirectory": "d:\\Users\\falkdavi\\Workspace\\Exercism\\java\\yacht",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    },
+    "debug": {
+        "default": "",
+        "items": [
+            {
+                "name": "yacht",
+                "projectName": "yacht",
+                "workingDirectory": "d:\\Users\\falkdavi\\Workspace\\Exercism\\java\\yacht",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "run": {
+        "default": "",
+        "items": [
+            {
+                "name": "phone-number",
+                "projectName": "phone-number",
+                "workingDirectory": "d:\\Users\\falkdavi\\Repos\\Exercism\\java\\phone-number",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    },
+    "debug": {
+        "default": "",
+        "items": [
+            {
+                "name": "phone-number",
+                "projectName": "phone-number",
+                "workingDirectory": "d:\\Users\\falkdavi\\Repos\\Exercism\\java\\phone-number",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    }
+}

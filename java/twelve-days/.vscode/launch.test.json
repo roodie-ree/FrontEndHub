@@ -1,0 +1,30 @@
+{
+    "run": {
+        "default": "",
+        "items": [
+            {
+                "name": "twelve-days",
+                "projectName": "twelve-days",
+                "workingDirectory": "d:\\Users\\falkdavi\\Repos\\Exercism\\java\\twelve-days",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    },
+    "debug": {
+        "default": "",
+        "items": [
+            {
+                "name": "twelve-days",
+                "projectName": "twelve-days",
+                "workingDirectory": "d:\\Users\\falkdavi\\Repos\\Exercism\\java\\twelve-days",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    }
+}

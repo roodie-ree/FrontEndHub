@@ -1,0 +1,30 @@
+{
+    "run": {
+        "default": "",
+        "items": [
+            {
+                "name": "armstrong-numbers",
+                "projectName": "armstrong-numbers",
+                "workingDirectory": "d:\\Users\\falkdavi\\Workspace\\Exercism\\java\\armstrong-numbers",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    },
+    "debug": {
+        "default": "",
+        "items": [
+            {
+                "name": "armstrong-numbers",
+                "projectName": "armstrong-numbers",
+                "workingDirectory": "d:\\Users\\falkdavi\\Workspace\\Exercism\\java\\armstrong-numbers",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    }
+}

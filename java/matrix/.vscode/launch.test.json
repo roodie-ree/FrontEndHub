@@ -1,0 +1,30 @@
+{
+    "run": {
+        "default": "",
+        "items": [
+            {
+                "name": "matrix",
+                "projectName": "matrix",
+                "workingDirectory": "d:\\Users\\falkdavi\\Repos\\Exercism\\java\\matrix",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    },
+    "debug": {
+        "default": "",
+        "items": [
+            {
+                "name": "matrix",
+                "projectName": "matrix",
+                "workingDirectory": "d:\\Users\\falkdavi\\Repos\\Exercism\\java\\matrix",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    }
+}

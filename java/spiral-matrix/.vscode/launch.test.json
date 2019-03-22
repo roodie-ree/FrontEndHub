@@ -1,0 +1,30 @@
+{
+    "run": {
+        "default": "",
+        "items": [
+            {
+                "name": "spiral-matrix",
+                "projectName": "spiral-matrix",
+                "workingDirectory": "d:\\Users\\falkdavi\\Workspace\\Exercism\\java\\spiral-matrix",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    },
+    "debug": {
+        "default": "",
+        "items": [
+            {
+                "name": "spiral-matrix",
+                "projectName": "spiral-matrix",
+                "workingDirectory": "d:\\Users\\falkdavi\\Workspace\\Exercism\\java\\spiral-matrix",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    }
+}

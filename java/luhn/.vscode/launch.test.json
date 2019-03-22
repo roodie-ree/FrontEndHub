@@ -1,0 +1,30 @@
+{
+    "run": {
+        "default": "",
+        "items": [
+            {
+                "name": "luhn",
+                "projectName": "luhn",
+                "workingDirectory": "d:\\Users\\falkdavi\\Workspace\\Exercism\\java\\luhn",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    },
+    "debug": {
+        "default": "",
+        "items": [
+            {
+                "name": "luhn",
+                "projectName": "luhn",
+                "workingDirectory": "d:\\Users\\falkdavi\\Workspace\\Exercism\\java\\luhn",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    }
+}
