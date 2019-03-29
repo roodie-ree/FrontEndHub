@@ -31,9 +31,8 @@ function meetupDay(year, month, dow, wom) {
     }
     return firstDayOfMonth;
   }
-  if (wom === 'last') {
 
-  }
+  return firstDayOfMonth;
 }
 
 export { meetupDay };
