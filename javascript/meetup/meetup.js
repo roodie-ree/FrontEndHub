@@ -13,23 +13,28 @@ function meetupDay(year, month, dow, wom) {
   const weekOfMonth = Number.parseInt(wom[0], 10);
   const firstDayOfMonth = new Date(year, month, 1);
   const firstWeekday = firstDayOfMonth.getDay();
-  if (firstWeekday < dayOfWeek) {
+  if (firstWeekday <= dayOfWeek) {
     firstDayOfMonth.setDate(dayOfWeek - firstWeekday + 1);
   } else {
     firstDayOfMonth.setDate(dayOfWeek - firstWeekday + 8);
   }
-  const dayOfMonth = firstDayOfMonth.getDate()
+  const dayOfMonth = firstDayOfMonth.getDate();
   if (Number.isInteger(weekOfMonth)) {
     firstDayOfMonth.setDate(dayOfMonth + (weekOfMonth - 1) * 7);
-    return firstDayOfMonth;
-  }
-  if (wom === 'teenth') {
+    if (firstDayOfMonth.getMonth() !== month) {
+      throw new Error();
+    }
+  } else if (wom === 'teenth') {
     if (dayOfMonth > 5) {
       firstDayOfMonth.setDate(dayOfMonth + 7);
     } else {
       firstDayOfMonth.setDate(dayOfMonth + 14);
     }
-    return firstDayOfMonth;
+  } else if (wom === 'last') {
+    firstDayOfMonth.setDate(dayOfMonth + 28);
+    if (firstDayOfMonth.getMonth() !== month) {
+      firstDayOfMonth.setDate(firstDayOfMonth.getDate() - 7);
+    }
   }
 
   return firstDayOfMonth;
