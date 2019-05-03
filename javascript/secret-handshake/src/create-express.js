@@ -1,4 +1,5 @@
 import express from 'express';
+import cors from 'cors';
 import { secretHandshake } from './secret-handshake';
 
 function handleHandshake(req, res) {
@@ -16,6 +17,7 @@ function handleHandshake(req, res) {
 
 function createExpress() {
   const app = express();
+  app.use(cors());
   app.get('/handshake', handleHandshake);
   return app;
 }

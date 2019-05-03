@@ -9,6 +9,7 @@
     "url": "https://github.com/exercism/javascript"
   },
   "devDependencies": {
+    "babel-cli": "6.26.0",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^23.6.0",
     "babel-plugin-transform-builtin-extend": "^1.1.2",
@@ -26,7 +27,9 @@
     ]
   },
   "scripts": {
-    "start": "nodemon -r babel-register app.js",
+    "build": "babel src --out-dir dist --ignore 'src/**/*.spec.js'",
+    "production": "node dist/app.js",
+    "start": "nodemon -r babel-register src/app.js",
     "test": "jest --no-cache ./*",
     "watch": "jest --no-cache --watch ./*",
     "lint": "eslint .",
@@ -53,6 +56,7 @@
   },
   "license": "MIT",
   "dependencies": {
+    "cors": "2.8.5",
     "express": "4.16.4"
   }
 }

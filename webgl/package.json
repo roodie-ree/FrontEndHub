@@ -1,0 +1,32 @@
+{
+  "name": "webgl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index/index.html",
+  "scripts": {
+    "start": "parcel src/index/index.html",
+    "test": "jest",
+    "clean": "rimraf .cache/* && rimraf dist/*",
+    "build": "rimraf dist/* && parcel build src/index/index.html --no-source-maps"
+  },
+  "author": "FrontEnd Hub 2",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-eslint": "10.0.1",
+    "eslint": "5.16.0",
+    "eslint-config-es": "1.0.0",
+    "eslint-plugin-react": "7.12.4",
+    "eslint-plugin-react-hooks": "1.6.0",
+    "jest": "24.7.1",
+    "parcel-bundler": "1.12.3",
+    "sass": "1.19.0"
+  },
+  "dependencies": {
+    "bootstrap": "4.3.1",
+    "core-js": "3.0.1",
+    "lodash": "4.17.11",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "regenerator-runtime": "0.13.2"
+  }
+}
