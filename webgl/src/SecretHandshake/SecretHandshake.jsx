@@ -1,26 +1,43 @@
-import React, { useEffect, useState } from 'react'
+import { debounce, pick } from 'lodash'
+import React, { isValidElement, useEffect, useState } from 'react'
+
+const getHandshake = debounce((number, setHandshake) => {
+  if (number.trim() === '') {
+    return setHandshake(null)
+  }
+  const shakeNumber = Number.parseInt(number, 10)
+
+  if (Number.isNaN(shakeNumber) || shakeNumber < 1 || shakeNumber > 31) {
+    return setHandshake(
+      <>Error: <strong>{number}</strong> is not a valid Handshake</>
+    )
+  }
+  const ctrl = new AbortController()
+
+  fetch(`http://localhost:5678/handshake?number=${number}`, pick(ctrl, 'signal'))
+    .then(response => response.json())
+    .then(result => setHandshake(result))
+    .catch(error => {
+      if (error.message.includes('aborted')) {
+        return
+      }
+      setHandshake(
+        <>Error fetching handshake <strong>{number}</strong>: {error.toString()}</>
+      )
+    })
+
+  return () => ctrl.abort()
+}, 500)
 
 const SecretHandshake = function SecretHandshake (props) {
   const [ number, setNumber ] = useState(props.initial || '')
   const [ handshake, setHandshake ] = useState(null)
 
-  useEffect(() => {
-    const shakeNumber = Number.parseInt(number, 10)
-
-    if (Number.isNaN(shakeNumber) || shakeNumber < 1 || shakeNumber > 31) {
-      return setHandshake(null)
-    }
-    fetch(`http://localhost:5678/handshake?number=${number}`)
-      .then(response => response.json())
-      .then(result => setHandshake(result))
-      .catch(error => {
-        setHandshake(`Error fetching handshake ${number}: ${error}`)
-      })
-  }, [ number ])
+  useEffect(() => getHandshake(number, setHandshake), [ number ])
 
   let handshakeList = null
 
-  if (typeof handshake === 'string') {
+  if (isValidElement(handshake)) {
     handshakeList = (
       <div className='alert alert-warning'>
         {handshake}
@@ -49,7 +66,7 @@ const SecretHandshake = function SecretHandshake (props) {
         <label>Handshake number</label>
         <input
           className='form-control'
-          type='number'
+          type='text'
           value={ number }
           onChange={ event => setNumber(event.target.value) }
         />

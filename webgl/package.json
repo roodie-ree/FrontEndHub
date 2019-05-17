@@ -5,6 +5,7 @@
   "main": "src/index/index.html",
   "scripts": {
     "start": "parcel src/index/index.html",
+    "backend": "cd ../javascript/secret-handshake && npm start",
     "test": "jest",
     "clean": "rimraf .cache/* && rimraf dist/*",
     "build": "rimraf dist/* && parcel build src/index/index.html --no-source-maps"
@@ -22,11 +23,10 @@
     "sass": "1.19.0"
   },
   "dependencies": {
+    "@babel/polyfill": "7.4.4",
     "bootstrap": "4.3.1",
-    "core-js": "3.0.1",
     "lodash": "4.17.11",
     "react": "16.8.6",
-    "react-dom": "16.8.6",
-    "regenerator-runtime": "0.13.2"
+    "react-dom": "16.8.6"
   }
 }

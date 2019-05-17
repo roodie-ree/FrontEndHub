@@ -2,8 +2,7 @@ import App from '../App/App'
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import 'core-js/stable'
-import 'regenerator-runtime/runtime'
+import '@babel/polyfill'
 
 ReactDOM.render(
   <App />,
